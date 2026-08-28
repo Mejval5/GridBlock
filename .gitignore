@@ -1,0 +1,68 @@
+# This is a live Minecraft data directory. Ignore new launcher/game files by
+# default, then allow only small, intentional configuration and project files.
+/*
+
+# Repository metadata
+!/.gitignore
+!/.gitattributes
+!/README.md
+
+# User-maintained settings and datapack source
+!/options.txt
+!/datapacks/
+!/datapacks/**
+
+# Common modpack configuration/source directories (if added later)
+!/config/
+!/config/**
+!/defaultconfigs/
+!/defaultconfigs/**
+!/kubejs/
+!/kubejs/**
+!/scripts/
+!/scripts/**
+
+# Never track local secrets, identity/account data, or credentials even if a
+# broader allow rule is added later.
+**/*credential*
+**/*credentials*
+**/*account*
+**/*clientid*
+**/clientId*.txt
+**/*auth*.json
+**/*token*
+
+# Never track generated or bulky content inside allowed directories.
+**/logs/
+**/cache/
+**/caches/
+**/crash-reports/
+**/screenshots/
+**/saves/
+**/backups/
+**/downloads/
+**/libraries/
+**/assets/
+**/versions/
+**/resourcepacks/
+**/shaderpacks/
+**/mods/
+**/run/
+**/runtime/
+**/webcache*/
+**/*.log
+**/*.log.gz
+**/*.tmp
+**/*.bak
+**/*.old
+**/*.jar
+**/*.zip
+**/*.7z
+**/*.rar
+**/*.sqlite
+**/*.sqlite3
+**/*.db
+**/*.dmp
+**/*.hprof
+**/Thumbs.db
+**/.DS_Store

@@ -1,0 +1,7 @@
+{
+  "pack": {
+    "description": "GridBlock - infinite deterministic 1-block grid in the void (spacing 3, self-repairing)",
+    "min_format": [107, 0],
+    "max_format": 107
+  }
+}
