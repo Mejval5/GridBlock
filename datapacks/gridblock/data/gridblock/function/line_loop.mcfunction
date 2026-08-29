@@ -1,5 +1,5 @@
 execute if block ~ ~ ~ minecraft:air run function gridblock:place
 
-scoreboard players add #z gb 2
+scoreboard players operation #z gb += #space gb
 scoreboard players remove #cz gb 1
-execute if score #cz gb matches 1.. positioned ~ ~ ~2 run function gridblock:line_loop
+$execute if score #cz gb matches 1.. positioned ~ ~ ~$(step) run function gridblock:line_loop with storage gridblock:tmp args
