@@ -1,7 +1,7 @@
 # deterministic per-column hash of (#x, #z) -> #h in [0, #n)
 # constants are sized so no intermediate ever exceeds 2^31-1
-# the spawn column (8,8) is always grass so there is solid footing to respawn on
-execute if score #x gb matches 8 if score #z gb matches 8 run return run setblock ~ ~ ~ minecraft:grass_block strict
+# the spawn column (8,8) is always soul soil so there is solid footing to respawn on
+execute if score #x gb matches 8 if score #z gb matches 8 run return run setblock ~ ~ ~ minecraft:soul_soil strict
 scoreboard players operation #h gb = #x gb
 scoreboard players operation #h gb %= #hm gb
 scoreboard players operation #t gb = #z gb
